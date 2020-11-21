@@ -1,10 +1,13 @@
-"SECURITYVPC" : {
-   "Type" : "AWS::EC2::VPC",
-   "Properties" : {
-      "CidrBlock" : "10.254.0.0/16",
-      "EnableDnsSupport" : "false",
-      "EnableDnsHostnames" : "false",
-      "InstanceTenancy" : "dedicated",
-      "Tags" : [ {"Key" : "foo", "Value" : "bar"} ]
+{
+   "AWSTemplateFormatVersion": "2010-09-09",
+   "Resources": {
+      "SECURITYVPC": {
+         "Type": "AWS::EC2::VPC",
+         "Properties": {
+            "CidrBlock": "10.254.0.0/16",
+            "EnableDnsSupport": true,
+            "EnableDnsHostnames": true
+         }
+      }
    }
 }
