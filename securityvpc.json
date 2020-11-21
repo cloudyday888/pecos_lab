@@ -1,17 +1,10 @@
-
-{
-   "SecurityVPC": {
-      "Type": "AWS::EC2::VPC",
-      "Properties": {
-         "CidrBlock": "10.255.0.0/16",
-         "EnableDnsSupport": "false",
-         "EnableDnsHostnames": "false",
-         "InstanceTenancy": "dedicated",
-         "Tags": [
-            {
-               "Key": "foo",
-               "Value": "bar"
-            }
-         ]
-      }
+"SECURITYVPC" : {
+   "Type" : "AWS::EC2::VPC",
+   "Properties" : {
+      "CidrBlock" : "10.254.0.0/16",
+      "EnableDnsSupport" : "false",
+      "EnableDnsHostnames" : "false",
+      "InstanceTenancy" : "dedicated",
+      "Tags" : [ {"Key" : "foo", "Value" : "bar"} ]
    }
+}
